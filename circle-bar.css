@@ -1,0 +1,54 @@
+.circle-bar {
+    position: relative;
+    border-radius: 50%;
+}
+
+    .circle-bar .slice {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .circle-bar.more-50 .slice {
+        clip: unset !important;
+    }
+
+        .circle-bar .bar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-style: solid;
+            border-radius: 50%;
+            transform: rotate(0deg);
+            transition: transform 1s 5s;
+        }
+
+        .circle-bar .bgBar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-style: solid;
+            border-radius: 50%;
+            border-color: transparent;
+        }
+
+        .circle-bar .fill {
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-style: solid;
+            border-radius: 50%;
+            transform: rotate(0deg);
+            transition: transform 1s 5s;
+        }
+        .circle-bar.more-50 .fill {
+            display: block;
+        }
