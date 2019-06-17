@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 
 ## Options :
-``` css
+```
 text: [string],
 lineColor: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>,
 lineBgColor: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>,
