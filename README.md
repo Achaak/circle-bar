@@ -65,13 +65,13 @@ $(document).ready(function() {
 
 
 ## Options :
-``` json
+``` css
 text: [string],
 lineColor: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>,
 lineBgColor: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>,
 backgroundColor: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>,
 lineWidth: [integer],
-lineWidthHover: "7px",
+lineWidthHover: [integer],
 bgLineWidth: [integer],
 bgLineWidthHover: [integer],
 lineDuration: [duration],
