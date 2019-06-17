@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Circle bar demo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Circle bar demo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="circle-bar.css">
+    </head>
+    <body>
+        <div id="circle-bar"></div>
+    </body>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="circle-bar.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            circleBar().init(
+                "#circle-bar", 
+                {
+                    text: "Insert your text",
+                    lineColor: "#1d8eff",
+                    lineBgColor: "rgb(150, 203, 255)",
+                    backgroundColor: "white",
+                    lineWidth: "15",
+                    lineWidthHover: "7",
+                    bgLineWidth: "10",
+                    bgLineWidthHover: "4",
+                    lineDuration: "200ms",
+                    lineDelay: "100ms",
+                    diameter: "300",
+                    viewPourcentage: true,
+                    textCSS: {
+                        "color": "#a0a0a0",
+                        "font-weight": "bold",
+                        "font-family": "Verdana, Arial, Helvetica, sans-serif",
+                        "font-size": "1rem"
+                    },
+                    textHoverCSS: {
+                        "font-size": "1.5rem",
+                        "color": "#1d8eff"
+                    },
+                    pourcentageCSS: {
+                        "color": "#a0a0a0",
+                        "font-weight": "bold",
+                        "font-family": "Verdana, Arial, Helvetica, sans-serif",
+                        "text-transform": "uppercase",
+                        "font-size": "1rem"
+                    },
+                    pourcentageHoverCSS: {
+                        "font-size": "1.5rem",
+                        "color": "#1d8eff"
+                    }
+                },
+                75
+            );
+        });
+    </script>
+</html>

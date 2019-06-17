@@ -1,54 +1,34 @@
 .circle-bar {
     position: relative;
-    border-radius: 50%;
 }
+    .circle-bar .infos-ctner {
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
 
-    .circle-bar .slice {
+    .circle-bar .circle {
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
     }
-    .circle-bar.more-50 .slice {
-        clip: unset !important;
-    }
 
         .circle-bar .bar {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-style: solid;
-            border-radius: 50%;
-            transform: rotate(0deg);
-            transition: transform 1s 5s;
+            transition: stroke-dashoffset 1s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            fill: transparent;
         }
 
         .circle-bar .bgBar {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-style: solid;
-            border-radius: 50%;
-            border-color: transparent;
-        }
-
-        .circle-bar .fill {
-            display: none;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-style: solid;
-            border-radius: 50%;
-            transform: rotate(0deg);
-            transition: transform 1s 5s;
-        }
-        .circle-bar.more-50 .fill {
-            display: block;
+            fill: transparent;
         }
