@@ -1,6 +1,9 @@
 # circle-bar
 This is a module to simply add a circle bar to your site.
 
+<img src="pictures/circle-bar-preview.png" alt="circle bar preview"/>
+
+
 ## Requirement :
 * JQuery
 
