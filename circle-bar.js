@@ -7,8 +7,8 @@ $.fn.isInViewport = function() {
 
     return elementBottom > viewportTop && elementTop < viewportBottom;
 };
-        
-function circleBar() {
+
+function CircleBar() {
     var circleBarDOM = undefined;
     var circleDOM    = $('<div class="bgBar"></div><svg class="circle"><circle class="bgBar"/><circle class="bar"/></svg>');
     var barDOM       = circleDOM.find(".bar");
@@ -31,12 +31,12 @@ function circleBar() {
     /**
      * Used to create the circle bar
      *
-     * @private
+     * @public
      * @param {string} _elem Class or id of the slider
      * @param {Array} _opts List of options
      * @param {number} _value Value of the circle bar
      */
-    function createCircleBar(_elem, _opts, _value) {
+    function init(_elem, _opts, _value) {
         // Defind variable
         circleBarDOM = $(_elem);
         circleBarDOM.empty(); // Clear element DOM
@@ -129,7 +129,7 @@ function circleBar() {
     /**
      * Used to set text
      *
-     * @private
+     * @public
      * @param {string} _text Text to insert
      */
     function setText(_text) {
@@ -145,7 +145,7 @@ function circleBar() {
     /**
      * Used to view the pourcentage of the circle bar
      *
-     * @private
+     * @public
      * @param {boolean} _bool True for view pourcentage if not false
      */
     function viewPourcentage(_bool) {
@@ -161,7 +161,7 @@ function circleBar() {
     /**
      * Used to set a value
      *
-     * @private
+     * @public
      * @param {number} _val Value of the circle bar
      */
     function setValue(_val) {
@@ -199,7 +199,7 @@ function circleBar() {
     /**
      * Used to set the color of the line of the circle bar
      *
-     * @private
+     * @public
      * @param {string} _lineColor <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>
      */
     function setLineColor(_lineColor) {
@@ -214,7 +214,7 @@ function circleBar() {
     /**
      * Used to set the background color of the line of the circle bar
      *
-     * @private
+     * @public
      * @param {string} _lineBgColor <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>
      */
     function setLineBgColor(_lineBgColor) {
@@ -229,7 +229,7 @@ function circleBar() {
     /**
      * Used to set the background color of the circle bar
      *
-     * @private
+     * @public
      * @param {string} _bgColor <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>
      */
     function setBgColor(_bgColor) {
@@ -244,7 +244,7 @@ function circleBar() {
     /**
      * Used to set the CSS of the text
      *
-     * @private
+     * @public
      * @param {Array} _css Array of CSS
      */
     function setTextCSS(_css) {
@@ -259,7 +259,7 @@ function circleBar() {
     /**
      * Used to set the CSS of the pourcentage
      *
-     * @private
+     * @public
      * @param {Array} _css Array of CSS
      */
     function setPourcentageCSS(_css) {
@@ -274,7 +274,7 @@ function circleBar() {
     /**
      * Used to set the hover CSS of the text
      *
-     * @private
+     * @public
      * @param {Array} _css Array of CSS
      */
     function setTextHoverCSS(_css) {
@@ -286,7 +286,7 @@ function circleBar() {
     /**
      * Used to set the hover CSS of the pourcentage
      *
-     * @private
+     * @public
      * @param {Array} _css Array of CSS
      */
     function setPourcentageHoverCSS(_css) {
@@ -323,8 +323,8 @@ function circleBar() {
     /**
      * Used to set the line width
      *
-     * @private
-     * @param {integer} _lineWidth Width of the line
+     * @public
+     * @param {number} _lineWidth Width of the line
      */
     function setLineWidth(_lineWidth) {
         if (_lineWidth) opts.lineWidth = _lineWidth;
@@ -338,8 +338,8 @@ function circleBar() {
     /**
      * Used to set the background line width
      *
-     * @private
-     * @param {integer} _bgLineWidth Width of the background line
+     * @public
+     * @param {number} _bgLineWidth Width of the background line
      */
     function setBgLineWidth(_bgLineWidth) {
         if (_bgLineWidth) opts.bgLineWidth = _bgLineWidth;
@@ -353,8 +353,8 @@ function circleBar() {
     /**
      * Used to set the line hover width
      *
-     * @private
-     * @param {integer} _lineWidthHover Width of the line hover
+     * @public
+     * @param {number} _lineWidthHover Width of the line hover
      */
     function setLineWidthHover(_lineWidthHover) {
         if (_lineWidthHover) opts.lineWidthHover = _lineWidthHover;
@@ -366,8 +366,8 @@ function circleBar() {
     /**
      * Used to set the background line hover width
      *
-     * @private
-     * @param {integer} _bgLineWidthHover Width of the background line hover
+     * @public
+     * @param {number} _bgLineWidthHover Width of the background line hover
      */
     function setbgLineWidthHover(_bgLineWidthHover) {
         if (_bgLineWidthHover) opts.bgLineWidthHover = _bgLineWidthHover;
@@ -410,7 +410,7 @@ function circleBar() {
     /**
      * Used to set the line duration of the circle bar transition
      *
-     * @private
+     * @public
      * @param {string} _lineDuration Duration of the transition
      */
     function setLineDuration(_lineDuration) {
@@ -423,7 +423,7 @@ function circleBar() {
     /**
      * Used to set the line delay of the circle bar transition
      *
-     * @private
+     * @public
      * @param {string} _lineDelay Delay of the transition
      */
     function setLineDelay(_lineDelay) {
@@ -452,7 +452,7 @@ function circleBar() {
     /**
      * Used to set the line transition hover of the circle bar transition
      *
-     * @private
+     * @public
      * @param {string} _lineTransitionHover Duration of the transition
      */
     function setLineTransitionHover(_lineTransitionHover) {
@@ -474,8 +474,8 @@ function circleBar() {
     /**
      * Used to set the diameter of the circle bar
      *
-     * @private
-     * @param {integer} _diameter Diameter of the circle bar
+     * @public
+     * @param {number} _diameter Diameter of the circle bar
      */
     function setDiameter(_diameter) {
         if (_diameter) opts.diameter = _diameter;
@@ -507,14 +507,14 @@ function circleBar() {
     /**
      * Used to get the value of the circle bar
      *
-     * @private
+     * @public
      */
     function getValue() { return value; }
 
     /**
      * Used to get the options of the circle bar
      *
-     * @private
+     * @public
      */
     function getOpts()  { return opts;  }
 
@@ -522,13 +522,13 @@ function circleBar() {
 
     return {
         "init": function(_elem, _opts, _value) {
-            createCircleBar(_elem, _opts, _value);
+            init(_elem, _opts, _value);
         },
         "getValue": function() {
-            getValue();
+            return getValue();
         },
         "getOpts": function() {
-            getOpts();
+            return getOpts();
         },
         "setText": function(_text) {
             setText(_text);

@@ -218,7 +218,7 @@ __circleBar().setLineWidth__ <a name="setLineWidth"></a>
 /**
  * Used to set the line width
  *
- * @param {integer} _lineWidth Width of the line
+ * @param {number} _lineWidth Width of the line
  */
 circleBar.setLineWidth(lineWidth);
 ```
@@ -228,7 +228,7 @@ __circleBar().setBgLineWidth__ <a name="setBgLineWidth"></a>
 /**
  * Used to set the background line width
  *
- * @param {integer} _bgLineWidth Width of the background line
+ * @param {number} _bgLineWidth Width of the background line
  */
 circleBar.setBgLineWidth(bgLineWidth);
 ```
@@ -258,7 +258,7 @@ __circleBar().setLineWidthHover__ <a name="setLineWidthHover"></a>
 /**
  * Used to set the line hover width
  *
- * @param {integer} _lineWidthHover Width of the line hover
+ * @param {number} _lineWidthHover Width of the line hover
  */
 circleBar.setLineWidthHover(lineWidthHover);
 ```
@@ -268,7 +268,7 @@ __circleBar().setbgLineWidthHover__ <a name="setbgLineWidthHover"></a>
 /**
  * Used to set the background line hover width
  *
- * @param {integer} _bgLineWidthHover Width of the background line hover
+ * @param {number} _bgLineWidthHover Width of the background line hover
  */
 circleBar.setbgLineWidthHover(bgLineWidthHover);
 ```
