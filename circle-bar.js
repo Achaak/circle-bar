@@ -386,21 +386,21 @@ function CircleBar() {
         circleBarDOM.hover(
             function(){
                 // Set the new stroke width
-                barDOM.css("stroke-width", opts.lineWidthHover);
-                bgBarDOM.css("stroke-width", opts.bgLineWidthHover);
+                if (opts.lineWidthHover)   barDOM.css("stroke-width", opts.lineWidthHover);
+                if (opts.bgLineWidthHover) bgBarDOM.css("stroke-width", opts.bgLineWidthHover);
 
                 // Set the hover CSS of the infos content
-                textDOM.css(opts.textHoverCSS);
-                pourcDOM.css(opts.pourcentageHoverCSS);
+                if (opts.textHoverCSS)        textDOM.css(opts.textHoverCSS);
+                if (opts.pourcentageHoverCSS) pourcDOM.css(opts.pourcentageHoverCSS);
             },
             function(){
                 // Set the old stroke width
-                barDOM.css("stroke-width", opts.lineWidth);
-                bgBarDOM.css("stroke-width", opts.bgLineWidth);
+                if (opts.lineWidthHover)   barDOM.css("stroke-width", opts.lineWidth);
+                if (opts.bgLineWidthHover) bgBarDOM.css("stroke-width", opts.bgLineWidth);
 
                 // Set the CSS of the infos content
-                textDOM.css(opts.textCSS);
-                pourcDOM.css(opts.pourcentageCSS);
+                if (opts.textHoverCSS)        textDOM.css(opts.textCSS);
+                if (opts.pourcentageHoverCSS) pourcDOM.css(opts.pourcentageCSS);
             }
         );
     }
